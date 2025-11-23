@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FaStar } from "react-icons/fa";
 import { useLanguage } from "@/context/LanguageContext";
-import { TESTIMONIALS } from "@/constants";
 
 export default function Testimonials() {
   const { t } = useLanguage();
@@ -22,7 +21,7 @@ export default function Testimonials() {
     },
   };
 
-  const testimonials = TESTIMONIALS;
+  const testimonials = t.testimonials.list;
 
   return (
     <section id="testimonials" className="py-20 px-6 bg-zinc-50">
