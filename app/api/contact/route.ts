@@ -4,9 +4,16 @@ import nodemailer from 'nodemailer'
 // Create a transporter for iCloud email
 // Supports both iCloud and other email providers
 const getTransporter = () => {
-  const emailProvider = process.env.EMAIL_PROVIDER || 'icloud'
+  const emailProvider = process.env.EMAIL_PROVIDER || 'gmail'
+  
+  console.log('Email Provider:', emailProvider)
+  console.log('Gmail User:', process.env.GMAIL_USER ? 'configured' : 'NOT configured')
+  console.log('Gmail Password:', process.env.GMAIL_APP_PASSWORD ? 'configured' : 'NOT configured')
   
   if (emailProvider === 'icloud') {
+    if (!process.env.ICLOUD_EMAIL || !process.env.ICLOUD_APP_PASSWORD) {
+      throw new Error('iCloud email credentials not configured')
+    }
     return nodemailer.createTransport({
       host: 'smtp.mail.me.com',
       port: 587,
@@ -17,6 +24,9 @@ const getTransporter = () => {
       },
     })
   } else if (emailProvider === 'gmail') {
+    if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
+      throw new Error('Gmail credentials not configured')
+    }
     return nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -26,10 +36,8 @@ const getTransporter = () => {
     })
   }
   
-  throw new Error('No valid email provider configured')
+  throw new Error(`No valid email provider configured. Provider: ${emailProvider}`)
 }
-
-const transporter = getTransporter()
 
 export async function POST(request: NextRequest) {
   try {
@@ -52,8 +60,15 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Get transporter (lazy initialization)
+    const transporter = getTransporter()
+    
     // Send email to yourself
-    const senderEmail = process.env.ICLOUD_EMAIL || process.env.GMAIL_USER
+    const senderEmail = process.env.GMAIL_USER || process.env.ICLOUD_EMAIL
+    
+    if (!senderEmail) {
+      throw new Error('No sender email configured')
+    }
     
     await transporter.sendMail({
       from: senderEmail,
@@ -87,9 +102,10 @@ export async function POST(request: NextRequest) {
       { status: 200 }
     )
   } catch (error) {
-    console.error('Email error:', error)
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error'
+    console.error('Email error:', errorMessage, error)
     return NextResponse.json(
-      { error: 'Failed to send email' },
+      { error: `Failed to send email: ${errorMessage}` },
       { status: 500 }
     )
   }
