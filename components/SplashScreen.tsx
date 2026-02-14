@@ -25,6 +25,8 @@ export default function SplashScreen() {
           width={120}
           height={120}
           className='animate-pulse'
+          priority
+          loading='eager'
         />
         <div className='h-1 w-24 bg-linear-to-r from-[#2E5090] to-[#F5F6FA] rounded-full animate-pulse'></div>
       </div>

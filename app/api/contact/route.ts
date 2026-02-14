@@ -60,6 +60,18 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Development mode - just log the message
+    if (process.env.DEV_MODE === 'true') {
+      console.log('📧 Contact Form Submission (DEV MODE):')
+      console.log('Name:', name)
+      console.log('Email:', email)
+      console.log('Message:', message)
+      return NextResponse.json(
+        { success: true, message: 'Message logged (dev mode)' },
+        { status: 200 }
+      )
+    }
+
     // Get transporter (lazy initialization)
     const transporter = getTransporter()
     

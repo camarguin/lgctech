@@ -20,6 +20,7 @@ export default function Footer() {
                 alt='LGC Logo'
                 width={52}
                 height={52}
+                style={{ height: 'auto' }}
               />
               <h3 className='text-2xl font-bold'>
                 <span className='text-white'>{t.footer.brand}</span>
