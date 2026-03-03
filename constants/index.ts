@@ -30,7 +30,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
     url: 'https://discord.com/users/339129414803783681',
     icon: 'discord',
   },
-  { name: 'Instagram', url: 'https://www.instagram.com/lucasgcoder', icon: 'instagram' },
+  { name: 'Instagram', url: 'https://www.instagram.com/lgctechcoder', icon: 'instagram' },
   { name: 'Figma', url: 'https://www.figma.com/@lucasgerhardtde', icon: 'figma' },
   { name: 'Whatsapp', url: 'https://wa.me/17783183796', icon: 'whatsapp' },
 ]
@@ -65,6 +65,15 @@ export const PROJECTS: Project[] = [
     image: '/projects/mysquad-project.png',
     link: 'https://mysquad-landingpage.vercel.app',
     tags: ['Firebase', 'Next.js', 'React Native', 'TypeScript', 'Tailwind CSS'],
+  },
+  {
+    id: 'perfilagro2.0',
+    title: 'Perfilagro 2.0',
+    description:
+      'Enhanced agronomy jobs platform connecting companies with qualified professionals. Features comprehensive admin panel for managing candidates, job postings, and recruitment processes with streamlined workflows.',
+    image: '/projects/perfilagro2.0-project.png',
+    link: 'https://www.perfilagro.com.br',
+    tags: ['Supabase', 'Next.js', 'Figma', 'Landing Page', 'Tailwind CSS'],
   },
   {
     id: 'combatly',

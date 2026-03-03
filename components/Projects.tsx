@@ -21,6 +21,7 @@ export default function Projects() {
   const getProjectDescription = (projectId: string) => {
     const descriptionMap: Record<string, keyof typeof t.projects.descriptions> = {
       'mysquad': 'mysquad',
+      'perfilagro2.0': 'perfilagro2.0',
       'travel-taiwan': 'travel-taiwan',
       'travel-vancouver': 'travel-vancouver',
       'combatly': 'combatly',
@@ -246,7 +247,7 @@ export default function Projects() {
           custom={3}
         >
           <motion.a
-            href="https://www.instagram.com/lucasgcoder"
+            href="https://www.instagram.com/lgctechcoder"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
