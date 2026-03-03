@@ -117,7 +117,7 @@ export const PROJECTS: Project[] = [
     description:
       'Agricultural jobs posting platform connecting professionals with opportunities in the farming industry.',
     image: '/projects/perfilagro-project.png',
-    link: 'https://perfilagro.com.br',
+    link: 'https://perfilagro.vercel.app',
     tags: ['Firebase', 'Chakra-UI', 'React'],
   },
   {
