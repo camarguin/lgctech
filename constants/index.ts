@@ -61,7 +61,7 @@ export const PROJECTS: Project[] = [
     id: 'mysquad',
     title: 'Mysquad',
     description:
-      'Create your fantasy hockey team, pick real NHL/PWHL players, compete with friends in custom leagues, or challenge players worldwide.',
+      'Create your fantasy hockey team, pick real PWHL players, compete with friends in custom leagues, or challenge players worldwide.',
     image: '/projects/mysquad-project.png',
     link: 'https://mysquad-landingpage.vercel.app',
     tags: ['Firebase', 'Next.js', 'React Native', 'TypeScript', 'Tailwind CSS'],
