@@ -81,7 +81,7 @@ export default function Hero() {
             {t.hero.contactBtn}
           </motion.button>
           <motion.a
-            href="https://drive.google.com/file/d/1U-pvNihM1wIb7iUO7_kmiOFvjRvsQzib/view?usp=sharing"
+            href="https://drive.google.com/file/d/18gjNukTujzX2odIA1fl1Y80to--OzP5L/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
