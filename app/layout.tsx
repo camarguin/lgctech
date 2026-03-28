@@ -16,21 +16,31 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lucas Gerhardt - Full Stack Web Developer | Terrace BC",
+  title: "Web Developer Terrace BC | Full Stack Developer | LGC Tech",
   description:
-    "Experienced full-stack web developer in Terrace BC specializing in React, Next.js, Firebase, and TypeScript. Building modern, responsive web applications and mobile solutions.",
+    "Professional full-stack web developer in Terrace BC offering custom web design, e-commerce solutions, mobile app development, and UI/UX design. Specializing in React, Next.js, Supabase, and Tailwind CSS for modern business websites.",
   keywords: [
-    "web developer",
-    "full stack developer",
+    "web developer Terrace BC",
+    "full stack developer Terrace",
+    "web design Terrace BC",
+    "custom website design",
     "React developer",
     "Next.js developer",
-    "Terrace BC",
-    "web development",
-    "JavaScript",
+    "e-commerce development",
+    "mobile app development",
+    "UI/UX design Terrace",
+    "web development services",
+    "business website design",
+    "responsive web design",
+    "JavaScript developer",
     "TypeScript",
-    "UI/UX design",
-    "firebase",
-    "frontend developer",
+    "Tailwind CSS",
+    "Supabase development",
+    "freelance web developer",
+    "website redesign Terrace",
+    "landing page design",
+    "web application development",
+    "Terrace BC tech",
   ],
   authors: [{ name: "Lucas Gerhardt de Camargo" }],
   creator: "Lucas Gerhardt de Camargo",
@@ -42,25 +52,25 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://lgctech.net",
-    siteName: "LGC Tech",
-    title: "Lucas Gerhardt - Full Stack Web Developer | Terrace BC",
+    siteName: "LGC Tech - Web Development",
+    title: "Web Developer Terrace BC | Full Stack Development Services",
     description:
-      "Expert full-stack web developer building modern digital experiences with React, Next.js, and cutting-edge technologies.",
+      "Expert full-stack web developer in Terrace BC creating modern, responsive websites and web applications. Custom solutions for businesses.",
     images: [
       {
         url: "https://lgctech.net/og-image.png",
         width: 1200,
         height: 630,
-        alt: "LGC Tech - Web Development Portfolio",
+        alt: "LGC Tech - Professional Web Development in Terrace BC",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lucas Gerhardt - Full Stack Web Developer",
+    title: "Web Developer Terrace BC - Full Stack Solutions",
     description:
-      "Building modern web applications with React, Next.js, and Firebase",
-    creator: "@lucasgcoder",
+      "Custom web design and development services for Terrace BC businesses. React, Next.js, and modern web technologies.",
+    creator: "@lgctechcoder",
     images: ["https://lgctech.net/og-image.png"],
   },
   robots: {
@@ -75,6 +85,9 @@ export const metadata: Metadata = {
     },
   },
   manifest: "/manifest.json",
+  verification: {
+    google: "your-google-verification-code",
+  },
 };
 
 export default function RootLayout({
@@ -126,24 +139,81 @@ export default function RootLayout({
                 name: "LGC Tech",
               },
               sameAs: [
-                "https://www.instagram.com/lucasgcoder",
+                "https://www.instagram.com/lgctechcoder",
                 "https://github.com/camarguin",
               ],
               location: {
                 "@type": "City",
                 name: "Terrace",
+                "@id": "https://en.wikipedia.org/wiki/Terrace,_British_Columbia",
+              },
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Terrace",
+                addressRegion: "BC",
+                addressCountry: "CA",
               },
               knowsAbout: [
                 "Web Development",
+                "Full Stack Development",
                 "React",
                 "Next.js",
                 "TypeScript",
                 "JavaScript",
+                "Supabase",
                 "Firebase",
-                "UI/UX Design",
-                "Full Stack Development",
                 "Tailwind CSS",
+                "UI/UX Design",
+                "E-commerce Development",
+                "Mobile App Development",
+                "Web Design",
                 "Node.js",
+              ],
+            }),
+          }}
+        />
+        {/* JSON-LD Structured Data - LocalBusiness */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": "https://lgctech.net",
+              name: "LGC Tech - Web Development",
+              description: "Professional web development, design, and mobile app development services in Terrace BC",
+              url: "https://lgctech.net",
+              telephone: "+17783183796",
+              areaServed: [
+                {
+                  "@type": "City",
+                  name: "Terrace",
+                  "@id": "https://en.wikipedia.org/wiki/Terrace,_British_Columbia",
+                },
+                {
+                  "@type": "State",
+                  name: "British Columbia",
+                },
+              ],
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Terrace",
+                addressRegion: "BC",
+                addressCountry: "CA",
+              },
+              serviceType: [
+                "Web Development",
+                "Web Design",
+                "E-Commerce Development",
+                "Mobile App Development",
+                "UI/UX Design",
+                "Landing Page Design",
+                "Custom Website Design",
+              ],
+              priceRange: "$$",
+              sameAs: [
+                "https://www.instagram.com/lgctechcoder",
+                "https://github.com/camarguin",
               ],
             }),
           }}
@@ -158,15 +228,16 @@ export default function RootLayout({
               name: "LGC Tech",
               url: "https://lgctech.net",
               logo: "https://lgctech.net/logo.png",
-              description: "Full-stack web development services",
+              description: "Full-stack web development and design services offering custom websites, e-commerce solutions, and mobile app development.",
               sameAs: [
-                "https://www.instagram.com/lucasgcoder",
+                "https://www.instagram.com/lgctechcoder",
                 "https://github.com/camarguin",
               ],
               contactPoint: {
                 "@type": "ContactPoint",
                 contactType: "Customer Service",
                 email: "contact@lgctech.net",
+                telephone: "+17783183796",
               },
             }),
           }}

@@ -85,6 +85,15 @@ export const PROJECTS: Project[] = [
     tags: ['Firebase', 'Next.js', 'Tailwind CSS'],
   },
   {
+    id: 'cinemaX',
+    title: 'CinemaX',
+    description:
+      'Modern cinema management platform with comprehensive admin panel for controlling showtimes, movies, and operations. Features movie catalogs with detailed info including genre, ratings, duration, 3D format, trailers, and services booking.',
+    image: '/projects/cinemax-project.png',
+    link: 'https://lgccinemax.vercel.app',
+    tags: ['Next.js', 'Tailwind CSS', 'Supabase', 'Admin Panel', 'Authentication'],
+  },
+  {
     id: 'yuanway-teashop',
     title: 'Yuan Way Teashop',
     description:

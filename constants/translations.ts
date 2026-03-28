@@ -13,7 +13,7 @@ export const EN = {
     title: "Web Developer",
     subtitle: "Based In Terrace-BC.",
     description:
-      "With 5 years in web development, I create digital products with high performance, usability, and clean design.",
+      "With 5+ years in web development, I create digital products with high performance, usability, and clean design.",
     contactBtn: "Contact me",
     resumeBtn: "My resume",
   },
@@ -107,6 +107,7 @@ export const EN = {
       'travel-taiwan': "Beautiful UI design showcasing Taiwan as a tourism destination. Learn about the country, its culture, attractions, and travel tips through an engaging design experience.",
       'travel-vancouver': "Stunning UI design showcasing Vancouver as a tourism destination. Discover the city through visual design, featuring attractions, activities, and travel information.",
       combatly: "A online turn-based strategy game where players compete to control a dynamic map. Play with friends or against configurable AI difficulty levels, trade card sets to gain reinforcements, and climb the leaderboards.",
+      cinemaX: "Modern cinema management platform with comprehensive admin panel for controlling showtimes, movies, and operations. Features movie catalogs with detailed info including genre, ratings, duration, 3D format, trailers, and services booking.",
       perfilagro: "Agricultural jobs posting platform connecting professionals with opportunities in the farming industry.",
       'perfilagro2.0': "Enhanced agronomy jobs platform connecting companies with qualified professionals. Features comprehensive admin panel for managing candidates, job postings, and recruitment processes with streamlined workflows.",
       stradalocadora: "A modern car rental and sales showcase platform. Dealers can display, showcase, and manage both rental and selling inventory with an intuitive interface.",
@@ -152,7 +153,7 @@ export const PT_BR = {
     title: "Desenvolvedor Web",
     subtitle: "Baseado em Terrace-BC.",
     description:
-      "Com 5 anos de desenvolvimento web, crio produtos digitais com alto desempenho, usabilidade e design limpo.",
+      "Com 5+ anos de desenvolvimento web, crio produtos digitais com alto desempenho, usabilidade e design limpo.",
     contactBtn: "Entre em contato",
     resumeBtn: "Meu currículo",
   },
@@ -246,6 +247,7 @@ export const PT_BR = {
       'travel-taiwan': "Belo design de UI mostrando Taiwan como destino turístico. Aprenda sobre o país, sua cultura, atrações e dicas de viagem através de uma experiência de design envolvente.",
       'travel-vancouver': "Design de UI impressionante mostrando Vancouver como destino turístico. Descubra a cidade através do design visual, com atrações, atividades e informações de viagem.",
       combatly: "Um jogo de estratégia baseado em turnos online onde jogadores competem para controlar um mapa dinâmico. Jogue com amigos ou contra níveis de dificuldade de IA configuráveis, negocie conjuntos de cartas para ganhar reforços e suba no ranking.",
+      cinemaX: "Plataforma moderna de gerenciamento de cinema com painel administrativo abrangente para controlar horários de exibição, filmes e operações. Apresenta catálogos de filmes com informações detalhadas incluindo gênero, classificações, duração, formato 3D, trailers e reserva de serviços.",
       perfilagro: "Plataforma de postagem de empregos agrícolas conectando profissionais com oportunidades no setor agrícola.",
       'perfilagro2.0': "A Perfil Agro é especializada em recrutamento e gestão de pessoas para o agronegócio, conectando empresas a profissionais qualificados para vagas de campo e administrativas. Plataforma aprimorada com painel administrativo completo para gerenciar candidatos, vagas de emprego e processos de recrutamento com fluxos de trabalho otimizados.",
       stradalocadora: "Uma plataforma moderna de aluguel de carros e vitrine de vendas. Revendedores podem exibir, apresentar e gerenciar inventário de aluguel e venda com uma interface intuitiva.",

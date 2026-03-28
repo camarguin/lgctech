@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Home Page -->
+  <!-- Home Page - Highest Priority -->
   <url>
     <loc>https://lgctech.net</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,16 +11,16 @@
   <!-- Privacy Policy -->
   <url>
     <loc>https://lgctech.net/privacy</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   
   <!-- Terms of Service -->
   <url>
     <loc>https://lgctech.net/terms</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2026-03-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>

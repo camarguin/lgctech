@@ -25,6 +25,7 @@ export default function Projects() {
       'travel-taiwan': 'travel-taiwan',
       'travel-vancouver': 'travel-vancouver',
       'combatly': 'combatly',
+      'cinemaX': 'cinemaX',
       'yuanway-teashop': 'yuanway',
       'perfilagro': 'perfilagro',
       'stradalocadora': 'stradalocadora',
